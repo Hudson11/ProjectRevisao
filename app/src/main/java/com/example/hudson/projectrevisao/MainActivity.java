@@ -35,4 +35,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, ActivityListarViewPager.class);
         startActivity(i);
     }
+
+    public void fragment(View v){
+        Intent i = new Intent(this, ActivityFragment.class);
+        startActivity(i);
+    }
 }

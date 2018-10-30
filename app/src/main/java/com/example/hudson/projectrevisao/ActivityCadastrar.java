@@ -35,6 +35,7 @@ public class ActivityCadastrar extends AppCompatActivity {
                 User user = new User(nome.getText().toString(), cpf.getText().toString(), rg.getText().toString());
                 dao.inserirUser(user);
 
+                finish();
             }
         });
 

@@ -20,6 +20,7 @@
         <activity android:name=".ActivityCadastrar"></activity>
         <activity android:name=".ActivityListar"></activity>
         <activity android:name=".ActivityListarViewPager"></activity>
+        <activity android:name=".ActivityFragment"></activity>
     </application>
 
 </manifest>
