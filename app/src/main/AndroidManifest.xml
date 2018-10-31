@@ -21,6 +21,8 @@
         <activity android:name=".ActivityListar"></activity>
         <activity android:name=".ActivityListarViewPager"></activity>
         <activity android:name=".ActivityFragment"></activity>
+        <activity android:name=".ActivityAbaFragment"></activity>
     </application>
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 </manifest>

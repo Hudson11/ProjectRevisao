@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="32dp"
         android:onClick="cadastrar"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -45,10 +47,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
-        android:text="Fragment"
         android:onClick="fragment"
+        android:text="Fragment"
         app:layout_constraintStart_toStartOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:onClick="abaFragment"
+        android:text="Abafragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="35dp"
+        android:onClick="callBackActivity"
+        android:text="CALLPHONE"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:ignore="MissingConstraints" />
 
 
 </android.support.constraint.ConstraintLayout>

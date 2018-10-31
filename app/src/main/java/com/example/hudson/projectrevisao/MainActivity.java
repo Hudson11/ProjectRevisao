@@ -1,6 +1,8 @@
 package com.example.hudson.projectrevisao;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,5 +41,16 @@ public class MainActivity extends AppCompatActivity {
     public void fragment(View v){
         Intent i = new Intent(this, ActivityFragment.class);
         startActivity(i);
+    }
+
+    public void abaFragment(View v){
+        Intent i = new Intent(this, ActivityAbaFragment.class);
+        startActivity(i);
+    }
+
+    public void callBackActivity(View v){
+        Uri uri = Uri.parse("geo: -25.654, -50.654");
+        Intent t = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivity(t);
     }
 }
